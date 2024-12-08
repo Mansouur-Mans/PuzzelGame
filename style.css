@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    background: radial-gradient(#39d412, #0380bb);
+}
+.box{
+    padding-top: -20%;
+    margin: 30;
+    position: absolute;
+    top: calc(60% - 175px);
+    left: calc(50% - 100px);
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transform: perspective(2500px) rotateY(310deg);
+
+}
+.m{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #820af3;
+    border-left: 3px solid #6108c7;
+    border-right: 3px solid #2a09e7;
+    box-sizing: border-box;
+    background: #60cf06;
+    color: #dd0f0f;
+}
+h1{
+    text-align: center;
+     align-items: center;
+    color: #24044d;
+}
+.title{
+    width: 500px;
+}
+.box div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+   
+}
+@keyframes animate{
+0%{
+    transform: perspective(1000px) rotateX(0deg);
+}
+100%{
+    transform: perspective(1000px) rotateX(359deg);
+}
+}
+
+
+.box div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #820af3;
+    border-left: 2px solid #e70909;
+    border-right: 2px solid #e70909;
+    box-sizing: border-box;
+    background: #717a69;
+    color: #dd0f0f;
+    /* background: #114407; */
+}
+.box div span:nth-child(1){
+    transform: rotateX(0deg);
+}
+.box div span:nth-child(2){
+    transform: rotateX(11.25deg);
+}
+.box div span:nth-child(3){
+    transform: rotateX(22.5deg);
+}
+.box div span:nth-child(4){
+    transform: rotateX(33.75deg);
+}
+.box div span:nth-child(5){
+    transform: rotateX(45deg);
+}
+.box div span:nth-child(6){
+    transform: rotateX(56.25deg);
+}
+.box div span:nth-child(7){
+    transform: rotateX(67.5deg);
+}
+.box div span:nth-child(8){
+    transform: rotateX(78.75deg);
+}
+.box div span:nth-child(9){
+    transform: rotateX(90deg);
+}
+.box div span:nth-child(10){
+    transform: rotateX(101.25deg);
+}
+.box div span:nth-child(11){
+    transform: rotateX(112.25deg);
+}
+.box div span:nth-child(12){
+    color: #ad1199;
+    color: #000;
+    transform: rotateX(123.75deg);
+}
+.box div span:nth-child(13){
+    transform: rotateX(135deg);
+}
+.box div span:nth-child(14){
+    transform: rotateX(146.25deg);
+}
+.box div span:nth-child(15){
+    transform: rotateX(157.5deg);
+}
+.box div span:nth-child(16){
+    transform: rotateX(168.75deg);
+  
+}
+
+.box div span:before,
+.box div span:after{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: linear-gradient(#3f0303, #e0e0e0);
+}
+.box div span:before{
+    
+top: 0;
+left: 0;
+}
+.box div span:after{
+bottom: 0;
+left: 0;
+}
